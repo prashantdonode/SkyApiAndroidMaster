@@ -186,6 +186,33 @@ namespace CableApiAndroidMaster.Controllers
         #endregion
 
 
+        #region Agent Login
+        [HttpPost]
+        public async Task<ProjectResult> AgentLogin(tblAdminRegistration model)
+        {
+            try
+            {
+                var result = _db.tblAdminRegistrations.Where(a => a.OperatorCode == model.OperatorCode && a.SkyStatus==1).ToList();
+
+                if (result != null)
+                {
+                    return new ProjectResult { Message = "Success", Status = 1, Response = result };
+                }
+                else
+                {
+                    return new ProjectResult { Message = "Not Success", Status = 0, Response = null };
+                }
+
+            }
+            catch (Exception exp)
+            {
+                return new ProjectResult { Message = exp.ToString(), Status = 0, Response = null };
+            }
+
+        }
+        #endregion
+
+
 
     }
 }
