@@ -105,7 +105,8 @@
                     <td>
                         @*<input type="submit" value="Approval" name="Edit" formaction="@Url.Action("Edit")" formmethod="post" class="btn btn-success" />*@
                         @Html.ActionLink("Approval", "Approval", new { id = item.Aid }) |
-                        @Html.ActionLink("Reject", "Reject", new { id = item.Aid })
+                        @Html.ActionLink("Reject", "Reject", new { id = item.Aid })|
+                        @Html.ActionLink("Update", "UpdateRequest", new { id = item.Aid })
 
                     </td>
                 </tr>

@@ -23,6 +23,8 @@
                 <ul class="navbar-nav">
                     <li>@Html.ActionLink("Home", "Dashboard", "Admin", new { area = "" }, new { @class = "nav-item nav-link" })</li>
                     <li>@Html.ActionLink("Request", "RequestApproval", "Dashboard", new { area = "" }, new { @class = "nav-item nav-link" })</li>
+                    <li>@Html.ActionLink("Admin Registration", "AdminRegistration", "Home", new { area = "" }, new { @class = "nav-item nav-link" })</li>
+                    <li>@Html.ActionLink("Send Data", "SendDataIntoUrl", "Remote", new { area = "" }, new { @class = "nav-item nav-link" })</li>
 
                 </ul>
             </div>
@@ -30,7 +32,7 @@
         <div class="col-md-4">
             <div class="collapse navbar-collapse le" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
-                    <li>@Html.ActionLink("Logout", "LogOut", "Admin", new { area = "" }, new { @class = "nav-item nav-link" })</li>
+                    <li>@Html.ActionLink("Logout", "LogOut", "Home", new { area = "" }, new { @class = "nav-item nav-link" })</li>
                 </ul>
             </div>
         </div>

@@ -26,7 +26,7 @@ namespace CableApiAndroidMaster.Controllers
                 if (ModelState.IsValid)
                 {
 
-                    var result = _db.tblAdminRegistrations.Where(a => a.SkyStatus == 0).ToList();
+                    var result = _db.tblAdminRegistrations.ToList();
 
                     return new ProjectResult { Message = "Success", Status = 1, Response = result };
                 }

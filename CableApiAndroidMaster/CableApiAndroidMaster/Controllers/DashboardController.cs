@@ -10,12 +10,9 @@ namespace CableApiAndroidMaster.Controllers
     public class DashboardController : Controller
     {
         ApprovalMasterApiController _objApproval = new ApprovalMasterApiController();
+        CableApiAndroidMasterEntities _db = new CableApiAndroidMasterEntities();
 
-
-        public ActionResult Index()
-        {
-            return View();
-        }
+    
 
 
         #region Approval Request Page Code
@@ -86,6 +83,33 @@ namespace CableApiAndroidMaster.Controllers
 
 
         #endregion
+
+
+        #region Update Api Link Url Methods 
+
+        public ActionResult UpdateRequest(int id)
+        {
+            var result = _db.tblAdminRegistrations.Find(id);
+            return View(result);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateRequest(tblAdminRegistration model)
+        {
+            if(model.ApiLink!=null)
+            {
+                _db.Entry(model).State = System.Data.Entity.EntityState.Modified;
+                _db.SaveChanges();
+
+                return RedirectToAction("RequestApproval", "Dashboard");
+            }
+          
+
+            return View();
+        }
+
+        #endregion
+
 
 
     }
