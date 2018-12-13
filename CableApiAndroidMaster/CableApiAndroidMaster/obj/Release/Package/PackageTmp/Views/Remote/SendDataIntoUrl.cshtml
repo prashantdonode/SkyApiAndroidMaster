@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "SendDataIntoUrl";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row">
+
+    <div class="col-md-3">
+        <input type="text" name="RegId" id="RegId" class="form-control" placeholder="Enter Registration No." />
+    </div>
+    <div class="col-md-4">
+        <input type="submit" value="Send Data" id="SendData" name="SendData" class="btn btn-success" />
+    </div>
+
+</div>
+
+<script src="~/Scripts/jquery-3.0.0.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $("#SendData").click(function () {
+
+            alert("Welcome PSD");
+
+            var RegId = $("#RegId").val();
+
+            $.ajax({
+                type: "POST",
+                url: "/Home/GetDetails",
+                data: '{RegId: "' +RegId+ '"}',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data1) {
+
+                    console.log(data1.data.Aid);
+                    //
+                    $.ajax({
+                        type: "POST",
+                        url: "http://192.168.0.113:8011/api/Registration/AdminRegistration",
+                        data: '{"Aid":"' + data1.data.Aid + '","RegId":"' + data1.data.RegId + '","Name":"' + data1.data.Name + '","Address":"' + data1.data.Address + '","City":"' + data1.data.City + '","Email":"' + data1.data.Email + '","MobileNo":"' + data1.data.MobileNo + '","UserId":"' + data1.data.UserId + '","Password":"' + data1.data.Password + '","Pin":"' + data1.data.Pin + '","NoOfAgent":"' + data1.data.NoOfAgent + '","RegDate":"' + data1.data.RegDate + '","SkyStatus":"' + data1.data.SkyStatus + '","OperatorCode":"' + data1.data.OperatorCode + '","IMEINo":"' + data1.data.IMEINo + '"}',
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (data1) {
+
+                            console.log('success');
+
+                        }
+                    });
+                    //
+
+                }
+            });
+        });
+
+    });
+
+
+
+
+</script>
