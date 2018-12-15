@@ -285,6 +285,7 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="Properties\PublishProfiles\CableApiMaster.pubxml" />
     <None Include="Properties\PublishProfiles\master12.pubxml" />
     <None Include="Properties\PublishProfiles\master15.pubxml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
@@ -310,7 +311,9 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
