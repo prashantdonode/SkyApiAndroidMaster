@@ -155,3 +155,4 @@ D:\GithubVisualStudio\CableMasterApi\CableApiAndroidMaster\CableApiAndroidMaster
 D:\GithubVisualStudio\CableMasterApi\CableApiAndroidMaster\CableApiAndroidMaster\obj\Release\CableApiAndroidMaster.csproj.GenerateResource.Cache
 D:\GithubVisualStudio\CableMasterApi\CableApiAndroidMaster\CableApiAndroidMaster\obj\Release\CableApiAndroidMaster.dll
 D:\GithubVisualStudio\CableMasterApi\CableApiAndroidMaster\CableApiAndroidMaster\obj\Release\CableApiAndroidMaster.pdb
+D:\GitHubProject\CableApiAndroidMaster\CableApiAndroidMaster\CableApiAndroidMaster\obj\Release\CableApiAndroidMaster.csprojResolveAssemblyReference.cache

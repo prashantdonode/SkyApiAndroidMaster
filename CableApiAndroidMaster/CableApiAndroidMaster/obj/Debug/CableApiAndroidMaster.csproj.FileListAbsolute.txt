@@ -153,7 +153,6 @@ D:\GitHubProject\CableApiAndroidMaster\CableApiAndroidMaster\CableApiAndroidMast
 D:\GitHubProject\CableApiAndroidMaster\CableApiAndroidMaster\CableApiAndroidMaster\obj\Debug\CableApiAndroidMaster.pdb
 D:\GitHubProject\CableApiAndroidMaster\CableApiAndroidMaster\CableApiAndroidMaster\obj\Debug\CableApiAndroidMaster.Migrations.firstdata.resources
 D:\GitHubProject\CableApiAndroidMaster\CableApiAndroidMaster\CableApiAndroidMaster\obj\Debug\CableApiAndroidMaster.csproj.GenerateResource.Cache
-D:\GitHubProject\CableApiAndroidMaster\CableApiAndroidMaster\CableApiAndroidMaster\obj\Debug\CableApiAndroidMaster.csprojResolveAssemblyReference.cache
 D:\GithubVisualStudio\CableMasterApi\CableApiAndroidMaster\CableApiAndroidMaster\bin\roslyn\csc.exe
 D:\GithubVisualStudio\CableMasterApi\CableApiAndroidMaster\CableApiAndroidMaster\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 D:\GithubVisualStudio\CableMasterApi\CableApiAndroidMaster\CableApiAndroidMaster\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
